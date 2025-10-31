@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wishlist - StayKenya</title>
+    <meta name="description" content="Save your favorite properties for later. Your StayKenya wishlist helps you keep track of accommodations you love.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body id="wishlist-page">
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="StayKenya" class="logo-img">
+                        <h1>StayKenya</h1>
+                    </a>
+                </div>
+                <div class="header-actions">
+                    <a href="tel:0740941872" class="call-btn">
+                        <i class="fas fa-phone"></i> Call Us
+                    </a>
+                    <a href="https://wa.me/254740941872" class="whatsapp-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <div class="music-controls">
+                        <button id="play-music" class="music-btn" title="Play Background Music">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button id="pause-music" class="music-btn" style="display: none;" title="Pause Background Music">
+                            <i class="fas fa-pause"></i>
+                        </button>
+                    </div>
+                </div>
+                <button class="menu-toggle">☰</button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="listings.html">All Listings</a></li>
+                    <li><a href="apartments.html">Apartments</a></li>
+                    <li><a href="villas.html">Villas</a></li>
+                    <li><a href="beach-houses.html">Beach Houses</a></li>
+                    <li><a href="luxury-retreats.html">Luxury Retreats</a></li>
+                    <li><a href="wishlist.html" class="active">Wishlist (<span class="wishlist-count">0</span>)</a></li>
+                    <li><a href="cart.html">Bookings (<span class="cart-count">0</span>)</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h2>My Wishlist</h2>
+            <p>Save your favorite properties and plan your next Kenyan adventure</p>
+        </div>
+    </section>
+
+    <!-- Wishlist Content -->
+    <section class="wishlist-content">
+        <div class="container">
+            <div class="wishlist-empty" id="wishlist-empty">
+                <div class="empty-state">
+                    <i class="fas fa-heart"></i>
+                    <h3>Your wishlist is empty</h3>
+                    <p>Start exploring our properties and save your favorites for later</p>
+                    <a href="listings.html" class="cta-button">Browse Properties</a>
+                </div>
+            </div>
+
+            <div class="wishlist-items" id="wishlist-items" style="display: none;">
+                <div class="wishlist-header">
+                    <h3>Saved Properties (<span id="wishlist-total">0</span>)</h3>
+                    <button class="clear-wishlist" id="clear-wishlist">Clear All</button>
+                </div>
+                <div class="wishlist-grid">
+                    <!-- Wishlist items will be populated by JavaScript -->
+                </div>
+                <div class="wishlist-actions">
+                    <a href="listings.html" class="secondary-button">Continue Browsing</a>
+                    <button class="cta-button" id="book-all-wishlist">Book Selected Items</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendations -->
+    <section class="recommendations" id="wishlist-recommendations" style="display: none;">
+        <div class="container">
+            <h3 class="section-title">You Might Also Like</h3>
+            <div class="listing-grid">
+                <!-- Recommended listings would go here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>StayKenya</h3>
+                    <p>Your gateway to unique accommodations across Kenya. Discover hidden gems and create unforgettable memories.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="listings.html">All Listings</a></li>
+                        <li><a href="apartments.html">Apartments</a></li>
+                        <li><a href="villas.html">Villas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Booking Guidelines</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                        <li><a href="#">Trust & Safety</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> <a href="tel:0740941872">0714 227 080</a></li>
+                        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/254740941872">WhatsApp</a></li>
+                        <li><i class="fas fa-envelope"></i> info@staykenya.co.ke</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 StayKenya. All rights reserved. | Discover Kenya's Hidden Gems</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

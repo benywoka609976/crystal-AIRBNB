@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact StayKenya - Get in Touch</title>
+    <meta name="description" content="Contact StayKenya for booking assistance, property inquiries, or general questions. We're here to help 24/7.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body id="contact-page">
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="StayKenya" class="logo-img">
+                        <h1>StayKenya</h1>
+                    </a>
+                </div>
+                <div class="header-actions">
+                    <a href="tel:0740941872" class="call-btn">
+                        <i class="fas fa-phone"></i> Call Us
+                    </a>
+                    <a href="https://wa.me/254740941872" class="whatsapp-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <div class="music-controls">
+                        <button id="play-music" class="music-btn" title="Play Background Music">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button id="pause-music" class="music-btn" style="display: none;" title="Pause Background Music">
+                            <i class="fas fa-pause"></i>
+                        </button>
+                    </div>
+                </div>
+                <button class="menu-toggle">☰</button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="listings.html">All Listings</a></li>
+                    <li><a href="apartments.html">Apartments</a></li>
+                    <li><a href="villas.html">Villas</a></li>
+                    <li><a href="beach-houses.html">Beach Houses</a></li>
+                    <li><a href="luxury-retreats.html">Luxury Retreats</a></li>
+                    <li><a href="wishlist.html">Wishlist (<span class="wishlist-count">0</span>)</a></li>
+                    <li><a href="cart.html">Bookings (<span class="cart-count">0</span>)</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>We're here to help with any questions about bookings, properties, or your stay</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Our team is available 24/7 to assist with your inquiries. Whether you have questions about a property, need help with a booking, or want to list your property with us, we're here to help.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>Call Us</h4>
+                                <p><a href="tel:0740941872">0714 227 080</a></p>
+                                <span>Available 24/7</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>WhatsApp</h4>
+                                <p><a href="https://wa.me/254740941872" target="_blank">+254 714 227 080</a></p>
+                                <span>Quick responses</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>Email</h4>
+                                <p><a href="mailto:info@staykenya.co.ke">info@staykenya.co.ke</a></p>
+                                <span>Response within 2 hours</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>Office</h4>
+                                <p>Westlands, Nairobi</p>
+                                <span>Kenya</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="business-hours">
+                        <h4>Business Hours</h4>
+                        <ul>
+                            <li><span>Monday - Friday:</span> 8:00 AM - 10:00 PM</li>
+                            <li><span>Saturday:</span> 9:00 AM - 8:00 PM</li>
+                            <li><span>Sunday:</span> 10:00 AM - 6:00 PM</li>
+                            <li><span>Emergency Support:</span> 24/7</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h3>Send us a Message</h3>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="booking">Booking Inquiry</option>
+                                <option value="property">Property Information</option>
+                                <option value="support">Customer Support</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="cta-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h3 class="section-title">Frequently Asked Questions</h3>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How do I book a property?</h4>
+                    <p>Simply browse our listings, select your desired property, choose your dates, and click "Book Now". You can also contact us directly for assistance with complex bookings.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What is your cancellation policy?</h4>
+                    <p>Cancellation policies vary by property. Most properties offer free cancellation up to 7 days before check-in. Please check the specific property's cancellation policy before booking.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Are the properties verified?</h4>
+                    <p>Yes! Every property on StayKenya is personally verified by our team to ensure it meets our standards for quality, safety, and accuracy.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you offer long-term stays?</h4>
+                    <p>Many of our properties offer discounted rates for long-term stays (30 days or more). Contact us for information about long-term booking options.</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="#" class="secondary-button">View All FAQs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>StayKenya</h3>
+                    <p>Your gateway to unique accommodations across Kenya. Discover hidden gems and create unforgettable memories.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="listings.html">All Listings</a></li>
+                        <li><a href="apartments.html">Apartments</a></li>
+                        <li><a href="villas.html">Villas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Booking Guidelines</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                        <li><a href="#">Trust & Safety</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> <a href="tel:0740941872">0714 227 080</a></li>
+                        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/254740941872">WhatsApp</a></li>
+                        <li><i class="fas fa-envelope"></i> info@staykenya.co.ke</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 StayKenya. All rights reserved. | Discover Kenya's Hidden Gems</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

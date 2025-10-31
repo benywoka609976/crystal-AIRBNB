@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bookings - StayKenya</title>
+    <meta name="description" content="Review your selected properties and proceed with booking. Secure your stay with StayKenya's trusted booking system.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body id="cart-page">
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="StayKenya" class="logo-img">
+                        <h1>StayKenya</h1>
+                    </a>
+                </div>
+                <div class="header-actions">
+                    <a href="tel:0740941872" class="call-btn">
+                        <i class="fas fa-phone"></i> Call Us
+                    </a>
+                    <a href="https://wa.me/254740941872" class="whatsapp-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <div class="music-controls">
+                        <button id="play-music" class="music-btn" title="Play Background Music">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button id="pause-music" class="music-btn" style="display: none;" title="Pause Background Music">
+                            <i class="fas fa-pause"></i>
+                        </button>
+                    </div>
+                </div>
+                <button class="menu-toggle">☰</button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="listings.html">All Listings</a></li>
+                    <li><a href="apartments.html">Apartments</a></li>
+                    <li><a href="villas.html">Villas</a></li>
+                    <li><a href="beach-houses.html">Beach Houses</a></li>
+                    <li><a href="luxury-retreats.html">Luxury Retreats</a></li>
+                    <li><a href="wishlist.html">Wishlist (<span class="wishlist-count">0</span>)</a></li>
+                    <li><a href="cart.html" class="active">Bookings (<span class="cart-count">0</span>)</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h2>My Bookings</h2>
+            <p>Review your selected properties and complete your reservation</p>
+        </div>
+    </section>
+
+    <!-- Cart Content -->
+    <section class="cart-content">
+        <div class="container">
+            <div class="cart-empty" id="cart-empty">
+                <div class="empty-state">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>Your booking cart is empty</h3>
+                    <p>Start exploring our properties and add your favorites to book</p>
+                    <a href="listings.html" class="cta-button">Browse Properties</a>
+                </div>
+            </div>
+
+            <div class="cart-items" id="cart-items" style="display: none;">
+                <div class="cart-header">
+                    <h3>Selected Properties (<span id="cart-total">0</span>)</h3>
+                    <button class="clear-cart" id="clear-cart">Clear All</button>
+                </div>
+                
+                <div class="cart-grid">
+                    <!-- Cart items will be populated by JavaScript -->
+                </div>
+                
+                <div class="cart-summary">
+                    <div class="summary-details">
+                        <div class="summary-row">
+                            <span>Subtotal:</span>
+                            <span id="cart-subtotal">KSh 0</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Service Fee:</span>
+                            <span id="cart-service-fee">KSh 0</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total:</span>
+                            <span id="cart-total-price">KSh 0</span>
+                        </div>
+                    </div>
+                    <div class="cart-actions">
+                        <a href="listings.html" class="secondary-button">Continue Browsing</a>
+                        <button class="cta-button" id="proceed-checkout">Proceed to Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Banner -->
+    <section class="security-banner">
+        <div class="container">
+            <h3><i class="fas fa-shield-alt"></i> Secure Booking Guarantee</h3>
+            <p>All our properties are verified and bookings are protected with our secure payment system.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>StayKenya</h3>
+                    <p>Your gateway to unique accommodations across Kenya. Discover hidden gems and create unforgettable memories.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="listings.html">All Listings</a></li>
+                        <li><a href="apartments.html">Apartments</a></li>
+                        <li><a href="villas.html">Villas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Booking Guidelines</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                        <li><a href="#">Trust & Safety</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> <a href="tel:0740941872">0714 227 080</a></li>
+                        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/254740941872">WhatsApp</a></li>
+                        <li><i class="fas fa-envelope"></i> info@staykenya.co.ke</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 StayKenya. All rights reserved. | Discover Kenya's Hidden Gems</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

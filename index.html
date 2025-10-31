@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StayKenya - Book Unique Accommodations in Kenya</title>
+    <meta name="description" content="StayKenya - Discover and book unique accommodations across Kenya. Apartments, villas, beach houses and luxury retreats with secure booking.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body id="index-page">
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="StayKenya" class="logo-img">
+                        <h1>StayKenya</h1>
+                    </a>
+                </div>
+                <div class="header-actions">
+                    <a href="tel:0740941872" class="call-btn">
+                        <i class="fas fa-phone"></i> Call Us
+                    </a>
+                    <a href="https://wa.me/254740941872" class="whatsapp-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <div class="music-controls">
+                        <button id="play-music" class="music-btn" title="Play Background Music">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button id="pause-music" class="music-btn" style="display: none;" title="Pause Background Music">
+                            <i class="fas fa-pause"></i>
+                        </button>
+                    </div>
+                </div>
+                <button class="menu-toggle">☰</button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="listings.html">All Listings</a></li>
+                    <li><a href="apartments.html">Apartments</a></li>
+                    <li><a href="villas.html">Villas</a></li>
+                    <li><a href="beach-houses.html">Beach Houses</a></li>
+                    <li><a href="luxury-retreats.html">Luxury Retreats</a></li>
+                    <li><a href="wishlist.html">Wishlist (<span class="wishlist-count">0</span>)</a></li>
+                    <li><a href="cart.html">Bookings (<span class="cart-count">0</span>)</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Find Your Perfect Stay in Kenya</h2>
+            <p>Discover unique accommodations across Kenya's most beautiful destinations</p>
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search destinations, properties, or experiences...">
+                <button class="search-btn">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Banner -->
+    <section class="security-banner">
+        <div class="container">
+            <h3><i class="fas fa-shield-alt"></i> Secure Booking Guarantee</h3>
+            <p>All our properties are verified and bookings are protected with our secure payment system.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose StayKenya?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon" style="background-image: url('images/unique-icon.png')"></div>
+                    <h3>Unique Stays</h3>
+                    <p>Discover one-of-a-kind accommodations that you won't find anywhere else.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon" style="background-image: url('images/verified-icon.png')"></div>
+                    <h3>Verified Properties</h3>
+                    <p>All our listings are personally verified to ensure quality and accuracy.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon" style="background-image: url('images/support-icon.png')"></div>
+                    <h3>24/7 Support</h3>
+                    <p>Our dedicated support team is available around the clock to assist you.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon" style="background-image: url('images/flexible-icon.png')"></div>
+                    <h3>Flexible Booking</h3>
+                    <p>Easy cancellation and modification options for your peace of mind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Browse By Category</h2>
+            <div class="category-grid">
+                <a href="apartments.html" class="category-card">
+                    <img src="images/apartments-bg.jpg" alt="Apartments">
+                    <h3>Apartments</h3>
+                </a>
+                <a href="villas.html" class="category-card">
+                    <img src="images/villas-bg.jpg" alt="Villas">
+                    <h3>Villas</h3>
+                </a>
+                <a href="beach-houses.html" class="category-card">
+                    <img src="images/beach-houses-bg.jpg" alt="Beach Houses">
+                    <h3>Beach Houses</h3>
+                </a>
+                <a href="luxury-retreats.html" class="category-card">
+                    <img src="images/luxury-retreats-bg.jpg" alt="Luxury Retreats">
+                    <h3>Luxury Retreats</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Listings -->
+    <section class="featured-listings">
+        <div class="container">
+            <h2 class="section-title">Featured Accommodations</h2>
+            <div class="listing-grid">
+                <!-- Listing Card 1 -->
+                <div class="listing-card" data-id="1">
+                    <img src="images/listing1.jpg" alt="Beachfront Villa in Diani" class="listing-image">
+                    <div class="listing-info">
+                        <h3 class="listing-title">Beachfront Villa in Diani</h3>
+                        <div class="listing-location">
+                            <i class="fas fa-map-marker-alt"></i> Diani Beach, South Coast
+                        </div>
+                        <div class="listing-details">
+                            <span>4 guests • 2 bedrooms • 2 baths</span>
+                        </div>
+                        <p class="listing-price">KSh 12,500 <span>/ night</span></p>
+                        <div class="listing-actions">
+                            <button class="like-btn">🤍</button>
+                            <button class="add-to-cart">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Listing Card 2 -->
+                <div class="listing-card" data-id="2">
+                    <img src="images/listing2.jpg" alt="Luxury Apartment in Nairobi" class="listing-image">
+                    <div class="listing-info">
+                        <h3 class="listing-title">Luxury Apartment in Westlands</h3>
+                        <div class="listing-location">
+                            <i class="fas fa-map-marker-alt"></i> Westlands, Nairobi
+                        </div>
+                        <div class="listing-details">
+                            <span>2 guests • 1 bedroom • 1 bath</span>
+                        </div>
+                        <p class="listing-price">KSh 6,800 <span>/ night</span></p>
+                        <div class="listing-actions">
+                            <button class="like-btn">🤍</button>
+                            <button class="add-to-cart">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Listing Card 3 -->
+                <div class="listing-card" data-id="3">
+                    <img src="images/listing3.jpg" alt="Mountain View Cottage" class="listing-image">
+                    <div class="listing-info">
+                        <h3 class="listing-title">Mountain View Cottage</h3>
+                        <div class="listing-location">
+                            <i class="fas fa-map-marker-alt"></i> Mount Kenya Region
+                        </div>
+                        <div class="listing-details">
+                            <span>6 guests • 3 bedrooms • 2 baths</span>
+                        </div>
+                        <p class="listing-price">KSh 9,500 <span>/ night</span></p>
+                        <div class="listing-actions">
+                            <button class="like-btn">🤍</button>
+                            <button class="add-to-cart">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Listing Card 4 -->
+                <div class="listing-card" data-id="4">
+                    <img src="images/listing4.jpg" alt="Lakeside Retreat" class="listing-image">
+                    <div class="listing-info">
+                        <h3 class="listing-title">Lakeside Retreat</h3>
+                        <div class="listing-location">
+                            <i class="fas fa-map-marker-alt"></i> Lake Naivasha
+                        </div>
+                        <div class="listing-details">
+                            <span>8 guests • 4 bedrooms • 3 baths</span>
+                        </div>
+                        <p class="listing-price">KSh 15,200 <span>/ night</span></p>
+                        <div class="listing-actions">
+                            <button class="like-btn">🤍</button>
+                            <button class="add-to-cart">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="listings.html" class="cta-button">View All Accommodations</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>StayKenya</h3>
+                    <p>Your gateway to unique accommodations across Kenya. Discover hidden gems and create unforgettable memories.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="listings.html">All Listings</a></li>
+                        <li><a href="apartments.html">Apartments</a></li>
+                        <li><a href="villas.html">Villas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Booking Guidelines</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                        <li><a href="#">Trust & Safety</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> <a href="tel:0740941872">0714 227 080</a></li>
+                        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/254740941872">WhatsApp</a></li>
+                        <li><i class="fas fa-envelope"></i> info@staykenya.co.ke</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 StayKenya. All rights reserved. | Discover Kenya's Hidden Gems</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
